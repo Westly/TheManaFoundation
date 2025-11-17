@@ -310,3 +310,89 @@ body {
     font-size: 2.1rem;
   }
 }
+
+/* --------------------------------------------------
+   Scroll reveal animations
+   -------------------------------------------------- */
+
+.reveal-on-scroll {
+  opacity: 0;
+  transform: translateY(24px);
+  transition:
+    opacity 550ms ease-out,
+    transform 550ms ease-out;
+  will-change: opacity, transform;
+}
+
+/* When JS says it's visible */
+.reveal-on-scroll.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Optional stagger delays controlled via data attributes */
+.reveal-on-scroll[data-reveal-delay="sm"] {
+  transition-delay: 120ms;
+}
+
+.reveal-on-scroll[data-reveal-delay="md"] {
+  transition-delay: 220ms;
+}
+
+.reveal-on-scroll[data-reveal-delay="lg"] {
+  transition-delay: 320ms;
+}
+
+/* Respect users who prefer reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .reveal-on-scroll {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+
+  .feature-card,
+  .card,
+  .btn--primary {
+    transition: none !important;
+  }
+}
+
+/* --------------------------------------------------
+   Cards & buttons – micro-interactions
+   -------------------------------------------------- */
+
+.feature-card,
+.card {
+  transition:
+    transform 200ms ease-out,
+    box-shadow 200ms ease-out,
+    border-color 200ms ease-out;
+}
+
+.feature-card:hover,
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 26px 55px rgba(15, 23, 42, 0.55);
+  border-color: rgba(220, 125, 44, 0.9); /* accent-ish */
+}
+
+.btn--primary {
+  transition:
+    transform 160ms ease-out,
+    box-shadow 160ms ease-out,
+    filter 160ms ease-out;
+}
+
+.btn--primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 18px 35px rgba(0, 0, 0, 0.4);
+}
+
+/* Optional: navbar "on scroll" polish */
+.navbar.navbar--scrolled {
+  background-color: rgba(15, 23, 42, 0.98) !important;
+  box-shadow: 0 18px 35px rgba(15, 23, 42, 0.7);
+  backdrop-filter: blur(10px);
+}
+
