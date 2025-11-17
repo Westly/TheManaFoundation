@@ -1,4 +1,10 @@
+<<<<<<< HEAD
 User-agent: *
 Disallow:
 
+=======
+User-agent: *
+Disallow:
+
+>>>>>>> 915cec8c95cc01975ff55fa36e20899acddbbc08
 Sitemap: https://themanafoundation.com/sitemap.xml
