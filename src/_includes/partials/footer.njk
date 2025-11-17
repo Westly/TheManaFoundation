@@ -1,0 +1,23 @@
+<footer id="contact" class="site-footer py-4 bg-dark text-light">
+  <div class="container d-flex flex-column flex-lg-row justify-content-between align-items-start align-items-lg-center gap-3">
+    <div>
+      <p class="site-footer__org mb-1 fw-semibold">{{ site.footer.org }}</p>
+      <p class="site-footer__meta mb-0 small">
+        {{ site.footer.address }} · {{ site.biz }} ·
+        <a href="mailto:{{ site.footer.email }}" class="link-light text-decoration-none">{{ site.footer.email }}</a>
+      </p>
+    </div>
+
+    <div class="site-footer__social small">
+      {% if site.social.facebook and site.social.facebook != "#" %}
+        <a href="{{ site.social.facebook }}" target="_blank" rel="noopener" class="link-light text-decoration-none me-3">Facebook</a>
+      {% endif %}
+      {% if site.social.instagram and site.social.instagram != "#" %}
+        <a href="{{ site.social.instagram }}" target="_blank" rel="noopener" class="link-light text-decoration-none me-3">Instagram</a>
+      {% endif %}
+      {% if site.social.x and site.social.x != "#" %}
+        <a href="{{ site.social.x }}" target="_blank" rel="noopener" class="link-light text-decoration-none">X</a>
+      {% endif %}
+    </div>
+  </div>
+</footer>

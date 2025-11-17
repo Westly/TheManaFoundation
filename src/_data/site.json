@@ -1,0 +1,21 @@
+{
+  "name": "The Mana Foundation",
+  "tagline": "Gatherings to raise funds for local children and families in need.",
+  "url": "https://themanafoundation.org",
+  "logo": "/assets/images/logo-mana.svg",
+  "biz": "Colorado Business License 20258224828",
+  "brand": {
+    "primary": "#0c2340",
+    "accent": "#dc7d2c"
+  },
+  "footer": {
+    "org": "The Mana Foundation",
+    "address": "8031 Glory Drive, Colorado Springs, CO 80924",
+    "email": "info@themanafoundation.com"
+  },
+  "social": {
+    "x": "#",
+    "facebook": "#",
+    "instagram": "#"
+  }
+}

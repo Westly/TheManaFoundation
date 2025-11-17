@@ -1,0 +1,28 @@
+[
+  {
+    "title": "Home",
+    "href": "#hero"
+  },
+  {
+    "title": "Sponsors",
+    "href": "#sponsors"
+  },
+  {
+    "title": "Programs",
+    "href": "#programs"
+  },
+  {
+    "title": "About",
+    "href": "#about"
+  },
+
+
+  {
+    "title": "Donate",
+    "href": "https://venmo.com/u/manafoundation"
+  },
+  {
+    "title": "Contact",
+    "href": "#contact"
+  }
+]
