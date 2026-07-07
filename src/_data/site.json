@@ -3,7 +3,9 @@
   "tagline": "Gatherings to raise funds for local children and families in need.",
   "url": "https://themanafoundation.org",
   "logo": "/assets/images/logo-mana.svg",
-  "biz": "Colorado Business License 20258224828",
+  "biz": "Business License 20258224828",
+  "501c3": "501(c)(3) Nonprofit Organization", 
+  "EIN" : "EIN: 41-2461824", 
   "brand": {
     "primary": "#0c2340",
     "accent": "#dc7d2c"
